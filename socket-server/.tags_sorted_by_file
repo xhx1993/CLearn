@@ -1,0 +1,241 @@
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+poll_socket_epoll_h	socket_epoll.h	2;"	d
+sp_add	socket_epoll.h	/^sp_add(int efd, int sock, void *ud) {$/;"	f
+sp_create	socket_epoll.h	/^sp_create() {$/;"	f
+sp_del	socket_epoll.h	/^sp_del(int efd, int sock) {$/;"	f
+sp_invalid	socket_epoll.h	/^sp_invalid(int efd) {$/;"	f
+sp_nonblocking	socket_epoll.h	/^sp_nonblocking(int fd) {$/;"	f
+sp_release	socket_epoll.h	/^sp_release(int efd) {$/;"	f
+sp_wait	socket_epoll.h	/^sp_wait(int efd, struct event *e, int max) {$/;"	f
+sp_write	socket_epoll.h	/^sp_write(int efd, int sock, void *ud, bool enable) {$/;"	f
+poll_socket_kqueue_h	socket_kqueue.h	2;"	d
+sp_add	socket_kqueue.h	/^sp_add(int kfd, int sock, void *ud) {$/;"	f
+sp_create	socket_kqueue.h	/^sp_create() {$/;"	f
+sp_del	socket_kqueue.h	/^sp_del(int kfd, int sock) {$/;"	f
+sp_invalid	socket_kqueue.h	/^sp_invalid(int kfd) {$/;"	f
+sp_nonblocking	socket_kqueue.h	/^sp_nonblocking(int fd) {$/;"	f
+sp_release	socket_kqueue.h	/^sp_release(int kfd) {$/;"	f
+sp_wait	socket_kqueue.h	/^sp_wait(int kfd, struct event *e, int max) {$/;"	f
+sp_write	socket_kqueue.h	/^sp_write(int kfd, int sock, void *ud, bool enable) {$/;"	f
+event	socket_poll.h	/^struct event {$/;"	s
+poll_fd	socket_poll.h	/^typedef int poll_fd;$/;"	t
+read	socket_poll.h	/^	bool read;$/;"	m	struct:event
+s	socket_poll.h	/^	void * s;$/;"	m	struct:event
+socket_poll_h	socket_poll.h	2;"	d
+write	socket_poll.h	/^	bool write;$/;"	m	struct:event
+FREE	socket_server.c	217;"	d	file:
+FREE	socket_server.c	219;"	d	file:
+HASH_ID	socket_server.c	45;"	d	file:
+MALLOC	socket_server.c	211;"	d	file:
+MALLOC	socket_server.c	213;"	d	file:
+MAX_EVENT	socket_server.c	28;"	d	file:
+MAX_INFO	socket_server.c	25;"	d	file:
+MAX_SOCKET	socket_server.c	40;"	d	file:
+MAX_SOCKET_P	socket_server.c	27;"	d	file:
+MAX_UDP_PACKAGE	socket_server.c	53;"	d	file:
+MIN_READ_BUFFER	socket_server.c	29;"	d	file:
+PRIORITY_HIGH	socket_server.c	42;"	d	file:
+PRIORITY_LOW	socket_server.c	43;"	d	file:
+PROTOCOL_TCP	socket_server.c	47;"	d	file:
+PROTOCOL_UDP	socket_server.c	48;"	d	file:
+PROTOCOL_UDPv6	socket_server.c	49;"	d	file:
+SIZEOF_TCPBUFFER	socket_server.c	64;"	d	file:
+SIZEOF_UDPBUFFER	socket_server.c	65;"	d	file:
+SOCKET_TYPE_BIND	socket_server.c	38;"	d	file:
+SOCKET_TYPE_CONNECTED	socket_server.c	35;"	d	file:
+SOCKET_TYPE_CONNECTING	socket_server.c	34;"	d	file:
+SOCKET_TYPE_HALFCLOSE	socket_server.c	36;"	d	file:
+SOCKET_TYPE_INVALID	socket_server.c	30;"	d	file:
+SOCKET_TYPE_LISTEN	socket_server.c	33;"	d	file:
+SOCKET_TYPE_PACCEPT	socket_server.c	37;"	d	file:
+SOCKET_TYPE_PLISTEN	socket_server.c	32;"	d	file:
+SOCKET_TYPE_RESERVE	socket_server.c	31;"	d	file:
+STRINIFY	socket_server.c	3;"	d	file:
+STRINIFY	socket_server.c	5;"	d	file:
+STRINIFY_	socket_server.c	2;"	d	file:
+STRINIFY_	socket_server.c	6;"	d	file:
+UDP_ADDRESS_SIZE	socket_server.c	51;"	d	file:
+add_udp_socket	socket_server.c	/^add_udp_socket(struct socket_server *ss, struct request_udp *udp) {$/;"	f	file:
+address	socket_server.c	/^	uint8_t address[UDP_ADDRESS_SIZE];$/;"	m	struct:request_send_udp	file:
+address	socket_server.c	/^	uint8_t address[UDP_ADDRESS_SIZE];$/;"	m	struct:request_setudp	file:
+alloc_id	socket_server.c	/^	int alloc_id;		\/\/当前分配的socket数量（递增)$/;"	m	struct:socket_server	file:
+append_sendbuffer	socket_server.c	/^append_sendbuffer(struct socket_server *ss, struct socket *s, struct request_send * request, int n) {$/;"	f	file:
+append_sendbuffer_	socket_server.c	/^append_sendbuffer_(struct socket_server *ss, struct wb_list *s, struct request_send * request, int size, int n) {$/;"	f	file:
+append_sendbuffer_low	socket_server.c	/^append_sendbuffer_low(struct socket_server *ss,struct socket *s, struct request_send * request) {$/;"	f	file:
+append_sendbuffer_udp	socket_server.c	/^append_sendbuffer_udp(struct socket_server *ss, struct socket *s, int priority, struct request_send * request, const uint8_t udp_address[UDP_ADDRESS_SIZE]) {$/;"	f	file:
+bind	socket_server.c	/^		struct request_bind bind;$/;"	m	union:request_package::__anon2	typeref:struct:request_package::__anon2::request_bind	file:
+bind_socket	socket_server.c	/^bind_socket(struct socket_server *ss, struct request_bind *request, struct socket_message *result) {$/;"	f	file:
+block_readpipe	socket_server.c	/^block_readpipe(int pipefd, void *buffer, int sz) {$/;"	f	file:
+buffer	socket_server.c	/^		char buffer[256];$/;"	m	union:request_package::__anon2	file:
+buffer	socket_server.c	/^	char * buffer;$/;"	m	struct:request_send	file:
+buffer	socket_server.c	/^	char buffer[MAX_INFO];$/;"	m	struct:socket_server	file:
+buffer	socket_server.c	/^	void * buffer;$/;"	m	struct:send_object	file:
+buffer	socket_server.c	/^	void *buffer;$/;"	m	struct:write_buffer	file:
+check_wb_list	socket_server.c	/^check_wb_list(struct wb_list *s) {$/;"	f	file:
+checkctrl	socket_server.c	/^	int checkctrl;		\/\/是否检查控制消息标记$/;"	m	struct:socket_server	file:
+clear_closed_event	socket_server.c	/^clear_closed_event(struct socket_server *ss, struct socket_message * result, int type) {$/;"	f	file:
+clear_wb_list	socket_server.c	/^clear_wb_list(struct wb_list *list) {$/;"	f	file:
+close	socket_server.c	/^		struct request_close close;$/;"	m	union:request_package::__anon2	typeref:struct:request_package::__anon2::request_close	file:
+close_socket	socket_server.c	/^close_socket(struct socket_server *ss, struct request_close *request, struct socket_message *result) {$/;"	f	file:
+ctrl_cmd	socket_server.c	/^ctrl_cmd(struct socket_server *ss, struct socket_message *result) {$/;"	f	file:
+do_bind	socket_server.c	/^do_bind(const char *host, int port, int protocol, int *family) {$/;"	f	file:
+do_listen	socket_server.c	/^do_listen(const char * host, int port, int backlog) {$/;"	f	file:
+dummy	socket_server.c	/^	uint8_t dummy[256];$/;"	m	struct:request_package	file:
+ev	socket_server.c	/^	struct event ev[MAX_EVENT];	\/\/$/;"	m	struct:socket_server	typeref:struct:socket_server::event	file:
+event_fd	socket_server.c	/^	poll_fd event_fd;	\/\/epoll的efid$/;"	m	struct:socket_server	file:
+event_index	socket_server.c	/^	int event_index;	\/\/当前处理的epoll事件id$/;"	m	struct:socket_server	file:
+event_n	socket_server.c	/^	int event_n;		\/\/当前可处理epoll事件数量$/;"	m	struct:socket_server	file:
+family	socket_server.c	/^	int family;$/;"	m	struct:request_udp	file:
+fd	socket_server.c	/^	int fd;$/;"	m	struct:request_bind	file:
+fd	socket_server.c	/^	int fd;$/;"	m	struct:request_listen	file:
+fd	socket_server.c	/^	int fd;$/;"	m	struct:request_udp	file:
+fd	socket_server.c	/^	int fd;$/;"	m	struct:socket	file:
+force_close	socket_server.c	/^force_close(struct socket_server *ss, struct socket *s, struct socket_message *result) {$/;"	f	file:
+forward_message_tcp	socket_server.c	/^forward_message_tcp(struct socket_server *ss, struct socket *s, struct socket_message * result) {$/;"	f	file:
+forward_message_udp	socket_server.c	/^forward_message_udp(struct socket_server *ss, struct socket *s, struct socket_message * result) {$/;"	f	file:
+free_buffer	socket_server.c	/^free_buffer(struct socket_server *ss, const void * buffer, int sz) {$/;"	f	file:
+free_func	socket_server.c	/^	void (*free_func)(void *);$/;"	m	struct:send_object	file:
+free_wb_list	socket_server.c	/^free_wb_list(struct socket_server *ss, struct wb_list *list) {$/;"	f	file:
+gen_udp_address	socket_server.c	/^gen_udp_address(int protocol, union sockaddr_all *sa, uint8_t * udp_address) {$/;"	f	file:
+has_cmd	socket_server.c	/^has_cmd(struct socket_server *ss) {$/;"	f	file:
+head	socket_server.c	/^	struct write_buffer * head;$/;"	m	struct:wb_list	typeref:struct:wb_list::write_buffer	file:
+header	socket_server.c	/^	uint8_t header[8];	\/\/ 6 bytes dummy$/;"	m	struct:request_package	file:
+high	socket_server.c	/^	struct wb_list high;$/;"	m	struct:socket	typeref:struct:socket::wb_list	file:
+host	socket_server.c	/^	char host[1];$/;"	m	struct:request_listen	file:
+host	socket_server.c	/^	char host[1];$/;"	m	struct:request_open	file:
+id	socket_server.c	/^	int id;$/;"	m	struct:request_bind	file:
+id	socket_server.c	/^	int id;$/;"	m	struct:request_close	file:
+id	socket_server.c	/^	int id;$/;"	m	struct:request_listen	file:
+id	socket_server.c	/^	int id;$/;"	m	struct:request_open	file:
+id	socket_server.c	/^	int id;$/;"	m	struct:request_send	file:
+id	socket_server.c	/^	int id;$/;"	m	struct:request_setopt	file:
+id	socket_server.c	/^	int id;$/;"	m	struct:request_setudp	file:
+id	socket_server.c	/^	int id;$/;"	m	struct:request_start	file:
+id	socket_server.c	/^	int id;$/;"	m	struct:request_udp	file:
+id	socket_server.c	/^	int id;$/;"	m	struct:socket	file:
+list_uncomplete	socket_server.c	/^list_uncomplete(struct wb_list *s) {$/;"	f	file:
+listen	socket_server.c	/^		struct request_listen listen;$/;"	m	union:request_package::__anon2	typeref:struct:request_package::__anon2::request_listen	file:
+listen_socket	socket_server.c	/^listen_socket(struct socket_server *ss, struct request_listen * request, struct socket_message *result) {$/;"	f	file:
+low	socket_server.c	/^	struct wb_list low;$/;"	m	struct:socket	typeref:struct:socket::wb_list	file:
+new_fd	socket_server.c	/^new_fd(struct socket_server *ss, int id, int fd, int protocol, uintptr_t opaque, bool add) {$/;"	f	file:
+next	socket_server.c	/^	struct write_buffer * next;$/;"	m	struct:write_buffer	typeref:struct:write_buffer::write_buffer	file:
+opaque	socket_server.c	/^	uintptr_t opaque;$/;"	m	struct:request_bind	file:
+opaque	socket_server.c	/^	uintptr_t opaque;$/;"	m	struct:request_close	file:
+opaque	socket_server.c	/^	uintptr_t opaque;$/;"	m	struct:request_listen	file:
+opaque	socket_server.c	/^	uintptr_t opaque;$/;"	m	struct:request_open	file:
+opaque	socket_server.c	/^	uintptr_t opaque;$/;"	m	struct:request_start	file:
+opaque	socket_server.c	/^	uintptr_t opaque;$/;"	m	struct:request_udp	file:
+opaque	socket_server.c	/^	uintptr_t opaque;$/;"	m	struct:socket	file:
+open	socket_server.c	/^		struct request_open open;$/;"	m	union:request_package::__anon2	typeref:struct:request_package::__anon2::request_open	file:
+open_request	socket_server.c	/^open_request(struct socket_server *ss, struct request_package *req, uintptr_t opaque, const char *addr, int port) {$/;"	f	file:
+open_socket	socket_server.c	/^open_socket(struct socket_server *ss, struct request_open * request, struct socket_message *result) {$/;"	f	file:
+p	socket_server.c	/^	} p;$/;"	m	struct:socket	typeref:union:socket::__anon1	file:
+port	socket_server.c	/^	int port;$/;"	m	struct:request_open	file:
+protocol	socket_server.c	/^	uint16_t protocol;$/;"	m	struct:socket	file:
+ptr	socket_server.c	/^	char *ptr;$/;"	m	struct:write_buffer	file:
+raise_uncomplete	socket_server.c	/^raise_uncomplete(struct socket * s) {$/;"	f	file:
+recvctrl_fd	socket_server.c	/^	int recvctrl_fd;	\/\/接受控制消息的socket$/;"	m	struct:socket_server	file:
+report_accept	socket_server.c	/^report_accept(struct socket_server *ss, struct socket *s, struct socket_message *result) {$/;"	f	file:
+report_connect	socket_server.c	/^report_connect(struct socket_server *ss, struct socket *s, struct socket_message *result) {$/;"	f	file:
+request_bind	socket_server.c	/^struct request_bind {$/;"	s	file:
+request_close	socket_server.c	/^struct request_close {$/;"	s	file:
+request_listen	socket_server.c	/^struct request_listen {$/;"	s	file:
+request_open	socket_server.c	/^struct request_open {$/;"	s	file:
+request_package	socket_server.c	/^struct request_package {$/;"	s	file:
+request_send	socket_server.c	/^struct request_send {$/;"	s	file:
+request_send_udp	socket_server.c	/^struct request_send_udp {$/;"	s	file:
+request_setopt	socket_server.c	/^struct request_setopt {$/;"	s	file:
+request_setudp	socket_server.c	/^struct request_setudp {$/;"	s	file:
+request_start	socket_server.c	/^struct request_start {$/;"	s	file:
+request_udp	socket_server.c	/^struct request_udp {$/;"	s	file:
+reserve_id	socket_server.c	/^reserve_id(struct socket_server *ss) {$/;"	f	file:
+rfds	socket_server.c	/^	fd_set rfds;$/;"	m	struct:socket_server	file:
+s	socket_server.c	/^	struct sockaddr s;$/;"	m	union:sockaddr_all	typeref:struct:sockaddr_all::sockaddr	file:
+send	socket_server.c	/^		struct request_send send;$/;"	m	union:request_package::__anon2	typeref:struct:request_package::__anon2::request_send	file:
+send	socket_server.c	/^	struct request_send send;$/;"	m	struct:request_send_udp	typeref:struct:request_send_udp::request_send	file:
+send_buffer	socket_server.c	/^send_buffer(struct socket_server *ss, struct socket *s, struct socket_message *result) {$/;"	f	file:
+send_buffer_empty	socket_server.c	/^send_buffer_empty(struct socket *s) {$/;"	f	file:
+send_list	socket_server.c	/^send_list(struct socket_server *ss, struct socket *s, struct wb_list *list, struct socket_message *result) {$/;"	f	file:
+send_list_tcp	socket_server.c	/^send_list_tcp(struct socket_server *ss, struct socket *s, struct wb_list *list, struct socket_message *result) {$/;"	f	file:
+send_list_udp	socket_server.c	/^send_list_udp(struct socket_server *ss, struct socket *s, struct wb_list *list, struct socket_message *result) {$/;"	f	file:
+send_object	socket_server.c	/^struct send_object {$/;"	s	file:
+send_object_init	socket_server.c	/^send_object_init(struct socket_server *ss, struct send_object *so, void *object, int sz) {$/;"	f	file:
+send_request	socket_server.c	/^send_request(struct socket_server *ss, struct request_package *request, char type, int len) {$/;"	f	file:
+send_socket	socket_server.c	/^send_socket(struct socket_server *ss, struct request_send * request, struct socket_message *result, int priority, const uint8_t *udp_address) {$/;"	f	file:
+send_udp	socket_server.c	/^		struct request_send_udp send_udp;$/;"	m	union:request_package::__anon2	typeref:struct:request_package::__anon2::request_send_udp	file:
+sendctrl_fd	socket_server.c	/^	int sendctrl_fd;	\/\/发送控制消息的socket$/;"	m	struct:socket_server	file:
+set_udp	socket_server.c	/^		struct request_setudp set_udp;$/;"	m	union:request_package::__anon2	typeref:struct:request_package::__anon2::request_setudp	file:
+set_udp_address	socket_server.c	/^set_udp_address(struct socket_server *ss, struct request_setudp *request, struct socket_message *result) {$/;"	f	file:
+setopt	socket_server.c	/^		struct request_setopt setopt;$/;"	m	union:request_package::__anon2	typeref:struct:request_package::__anon2::request_setopt	file:
+setopt_socket	socket_server.c	/^setopt_socket(struct socket_server *ss, struct request_setopt *request) {$/;"	f	file:
+size	socket_server.c	/^		int size;$/;"	m	union:socket::__anon1	file:
+slot	socket_server.c	/^	struct socket slot[MAX_SOCKET];	\/\/socket数组$/;"	m	struct:socket_server	typeref:struct:socket_server::socket	file:
+sockaddr_all	socket_server.c	/^union sockaddr_all {$/;"	u	file:
+socket	socket_server.c	/^struct socket {$/;"	s	file:
+socket_keepalive	socket_server.c	/^socket_keepalive(int fd) {$/;"	f	file:
+socket_server	socket_server.c	/^struct socket_server {$/;"	s	file:
+socket_server_bind	socket_server.c	/^socket_server_bind(struct socket_server *ss, uintptr_t opaque, int fd) {$/;"	f
+socket_server_close	socket_server.c	/^socket_server_close(struct socket_server *ss, uintptr_t opaque, int id) {$/;"	f
+socket_server_connect	socket_server.c	/^socket_server_connect(struct socket_server *ss, uintptr_t opaque, const char * addr, int port) {$/;"	f
+socket_server_create	socket_server.c	/^socket_server_create() {$/;"	f
+socket_server_exit	socket_server.c	/^socket_server_exit(struct socket_server *ss) {$/;"	f
+socket_server_listen	socket_server.c	/^socket_server_listen(struct socket_server *ss, uintptr_t opaque, const char * addr, int port, int backlog) {$/;"	f
+socket_server_nodelay	socket_server.c	/^socket_server_nodelay(struct socket_server *ss, int id) {$/;"	f
+socket_server_poll	socket_server.c	/^socket_server_poll(struct socket_server *ss, struct socket_message * result, int * more) {$/;"	f
+socket_server_release	socket_server.c	/^socket_server_release(struct socket_server *ss) {$/;"	f
+socket_server_send	socket_server.c	/^socket_server_send(struct socket_server *ss, int id, const void * buffer, int sz) {$/;"	f
+socket_server_send_lowpriority	socket_server.c	/^socket_server_send_lowpriority(struct socket_server *ss, int id, const void * buffer, int sz) {$/;"	f
+socket_server_start	socket_server.c	/^socket_server_start(struct socket_server *ss, uintptr_t opaque, int id) {$/;"	f
+socket_server_udp	socket_server.c	/^socket_server_udp(struct socket_server *ss, uintptr_t opaque, const char * addr, int port) {$/;"	f
+socket_server_udp_address	socket_server.c	/^socket_server_udp_address(struct socket_server *ss, struct socket_message *msg, int *addrsz) {$/;"	f
+socket_server_udp_connect	socket_server.c	/^socket_server_udp_connect(struct socket_server *ss, int id, const char * addr, int port) {$/;"	f
+socket_server_udp_send	socket_server.c	/^socket_server_udp_send(struct socket_server *ss, int id, const struct socket_udp_address *addr, const void *buffer, int sz) {$/;"	f
+socket_server_userobject	socket_server.c	/^socket_server_userobject(struct socket_server *ss, struct socket_object_interface *soi) {$/;"	f
+soi	socket_server.c	/^	struct socket_object_interface soi;$/;"	m	struct:socket_server	typeref:struct:socket_server::socket_object_interface	file:
+start	socket_server.c	/^		struct request_start start;$/;"	m	union:request_package::__anon2	typeref:struct:request_package::__anon2::request_start	file:
+start_socket	socket_server.c	/^start_socket(struct socket_server *ss, struct request_start *request, struct socket_message *result) {$/;"	f	file:
+sz	socket_server.c	/^	int sz;$/;"	m	struct:request_send	file:
+sz	socket_server.c	/^	int sz;$/;"	m	struct:send_object	file:
+sz	socket_server.c	/^	int sz;$/;"	m	struct:write_buffer	file:
+tail	socket_server.c	/^	struct write_buffer * tail;$/;"	m	struct:wb_list	typeref:struct:wb_list::write_buffer	file:
+type	socket_server.c	/^	uint16_t type;$/;"	m	struct:socket	file:
+u	socket_server.c	/^	} u;$/;"	m	struct:request_package	typeref:union:request_package::__anon2	file:
+udp	socket_server.c	/^		struct request_udp udp;$/;"	m	union:request_package::__anon2	typeref:struct:request_package::__anon2::request_udp	file:
+udp_address	socket_server.c	/^		uint8_t udp_address[UDP_ADDRESS_SIZE];$/;"	m	union:socket::__anon1	file:
+udp_address	socket_server.c	/^	uint8_t udp_address[UDP_ADDRESS_SIZE];$/;"	m	struct:write_buffer	file:
+udp_socket_address	socket_server.c	/^udp_socket_address(struct socket *s, const uint8_t udp_address[UDP_ADDRESS_SIZE], union sockaddr_all *sa) {$/;"	f	file:
+udpbuffer	socket_server.c	/^	uint8_t udpbuffer[MAX_UDP_PACKAGE];$/;"	m	struct:socket_server	file:
+userobject	socket_server.c	/^	bool userobject;$/;"	m	struct:write_buffer	file:
+v4	socket_server.c	/^	struct sockaddr_in v4;$/;"	m	union:sockaddr_all	typeref:struct:sockaddr_all::sockaddr_in	file:
+v6	socket_server.c	/^	struct sockaddr_in6 v6;$/;"	m	union:sockaddr_all	typeref:struct:sockaddr_all::sockaddr_in6	file:
+value	socket_server.c	/^	int value;$/;"	m	struct:request_setopt	file:
+wb_list	socket_server.c	/^struct wb_list {$/;"	s	file:
+wb_size	socket_server.c	/^	int64_t wb_size;$/;"	m	struct:socket	file:
+what	socket_server.c	/^	int what;$/;"	m	struct:request_setopt	file:
+write_buffer	socket_server.c	/^struct write_buffer {$/;"	s	file:
+write_buffer_free	socket_server.c	/^write_buffer_free(struct socket_server *ss, struct write_buffer *wb) {$/;"	f	file:
+SOCKET_ACCEPT	socket_server.h	14;"	d
+SOCKET_CLOSE	socket_server.h	12;"	d
+SOCKET_DATA	socket_server.h	11;"	d
+SOCKET_ERROR	socket_server.h	15;"	d
+SOCKET_EXIT	socket_server.h	16;"	d
+SOCKET_OPEN	socket_server.h	13;"	d
+SOCKET_UDP	socket_server.h	17;"	d
+buffer	socket_server.h	/^	void * (*buffer)(void *);$/;"	m	struct:socket_object_interface
+data	socket_server.h	/^	char * data;$/;"	m	struct:socket_message
+free	socket_server.h	/^	void (*free)(void *);$/;"	m	struct:socket_object_interface
+id	socket_server.h	/^	int id;$/;"	m	struct:socket_message
+opaque	socket_server.h	/^	uintptr_t opaque;$/;"	m	struct:socket_message
+size	socket_server.h	/^	int (*size)(void *);$/;"	m	struct:socket_object_interface
+skynet_socket_server_h	socket_server.h	2;"	d
+socket_message	socket_server.h	/^struct socket_message {$/;"	s
+socket_object_interface	socket_server.h	/^struct socket_object_interface {$/;"	s
+ud	socket_server.h	/^	int ud;	\/\/ for accept, ud is listen id ; for data, ud is size of data$/;"	m	struct:socket_message
+_poll	test.c	/^_poll(void * ud) {$/;"	f	file:
+main	test.c	/^main() {$/;"	f
+test	test.c	/^test(struct socket_server *ss) {$/;"	f	file:

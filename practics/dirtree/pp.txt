@@ -1,0 +1,59 @@
+/home/xhx1993/pra/
+|--prathreadcontrol
+    |--test1
+    [1A|[1D[1Bcount: 1 |--test1.c
+|--count_time.c
+|--prasignal
+    |--test1
+    |--test3.c
+    |--test3
+    |--test2.c
+    |--test1.c
+    [1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[5Bcount: 5 |--test2
+|--abcd_mutex.c
+|--print
+|--prathread
+    |--test1
+    [1A|[1D[1Bcount: 1 |--test1.c
+|--test.c
+|--abcd_cond.c
+|--strtok
+|--count_time
+|--count_alarm.c
+|--reverselist.c
+|--count_alarm
+|--pra.c
+|--abcd_mutex
+|--strtok.c
+|--dirtree
+    |--c
+        |--test4
+            |--childt2
+                |--cct1
+                [1A|[1D[1Bcount: 1 |--cct2
+                    |--ccdc1
+                    [1A|[1D[1Bcount: 1 |--ccdc2
+            [1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[5Bcount: 5 |--childt3
+        |--test1
+        |--test3
+            |--child3
+                |--ccd3
+        [1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[11Bcount: 11 |--test2
+            |--childt2
+            [1A|[1D[1Bcount: 1 |--childt1
+                |--cct1
+                [1A|[1D[1Bcount: 1 |--cct2
+                    |--ccdc1
+                        |--ccdcc2
+                        |--ccdcc1
+                        [1A|[1D[1A|[1D[2Bcount: 2 |--ccdcc3
+                    [1A|[1D[1A|[1D[1A|[1D[1A|[1D[4Bcount: 4 |--ccdc2
+    |--test.c
+    |--dirtree1
+    |--dirtree.c
+    |--dirtree1.c
+    |--dirtree
+    |--pp.txt
+    [1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[28Bcount: 28 |--test
+|--abcd_cond
+[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[1A|[1D[57Bcount: 57 |--test

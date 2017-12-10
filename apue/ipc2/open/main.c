@@ -1,0 +1,36 @@
+#include "open.h"
+#include <fcntl.h>
+
+#define BUFFSIZE 8192
+
+int
+main(int argc, char *argv[])
+{
+	int n, fd;
+	char buf[BUFFSIZE], line[MAXLINE];
+	
+	/* read filename to cat from stdin */
+	while (1) {
+		printf("enter the absolute filename:\n");
+		if (fgets(line, MAXLINE, stdin) == NULL)
+			break;
+
+		if (line[strlen(line) - 1] == '\n')
+			line[strlen(line) - 1] = 0; /* replace newline with null terminated */
+		printf("%s", line);		
+				 
+		/* open the file */
+		if ((fd = csopen(line, O_RDONLY)) < 0)
+			continue;  /* csopen() prints error from server */
+		
+		/* and cat to stdout */
+		printf("%s context:\n", line);
+		while ((n = read(fd, buf, BUFFSIZE)) > 0)
+			if (write(STDOUT_FILENO, buf, n) != n)
+				err_sys("write error");
+		if (n < 0)
+			err_sys("read error");
+		close(fd);
+	}
+	exit(0);
+}
