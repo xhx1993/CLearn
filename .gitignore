@@ -1,0 +1,11 @@
+#忽略gitignore
+
+#忽略后缀名为xx的文件
+*.[oa]
+*.out
+*.DSYM
+*.sublime*
+
+#显示
+main
+tags

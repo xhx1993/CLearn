@@ -64,6 +64,7 @@ public:
 
 int main()
 {
+	//析构时，先执行继承类最底层的析构，然后在往父类上
 	Quote *p=nullptr;
 	{
 		p = new Dirved_quote;
